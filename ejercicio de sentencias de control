@@ -1,0 +1,86 @@
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+
+
+//funcion if •	Usando un if, crear una condición que compare si la variable numeroIf es positivo, negativo, o 0.
+//Pista: Los números inferiores a 0 son negativos y los superiores, positivos.
+        System.out.println("1ª Parte ejercicio = if");
+        int numeroif=5;
+
+          if (numeroif>0){
+            System.out.println("Numero If es positivo");
+          } else if (numeroif<0) {
+            System.out.println("NumeroIf es negativo");
+            
+          } else if (numeroif==0) {
+            System.out.println("NumeroIf es 0");
+           }
+//Crea un bucle While, este bucle tendrá que tener como condición que la variable numeroWhile
+// sea inferior a 3, el bloque de código que tendrá el bucle deberá:
+        //Incrementar el valor de la variable en uno cada vez que se ejecute.
+        //Mostrarlo por pantalla cada vez que se ejecute.
+        System.out.println("2ª Parte ejercicio = while");
+        int numerowhile=0;
+          while (numerowhile<3) {
+              System.out.println(numerowhile);
+              numerowhile = numerowhile + 1;
+          }
+
+
+//	Para el bucle Do While, deberás crear la misma estructura que en el While,
+//	pero solo se debe ejecutar una vez.
+
+        System.out.println("3ª Parte ejercicio = do while");
+        numerowhile=0;
+                //reseteo valor de numero while para que el contador funcione correctamente
+
+        do {
+             System.out.println(numerowhile);
+            numerowhile = numerowhile + 3;
+        }while(numerowhile<3);
+
+//	Para el bucle For, crea una variable numeroFor, esta variable tendrá como valor 0
+//	y su condición será que la variable sea igual o menor que 3, se irá incrementando en 1
+//	su valor cada vez que se ejecute y deberá mostrarse por pantalla.
+        System.out.println("4ª Parte ejercicio = for");
+
+        for (int numerofor = 1; numerofor <=3 ; numerofor++) {
+            System.out.println(numerofor);
+
+            
+        }
+
+//•	Por último, para el Switch, deberás crear la variable estacion, y distintos case para las
+// cuatro estaciones del año. Dependiendo del valor de la variable estacion se deberá mandar
+// un mensaje por consola informando de la estación en la que está. También habrá que poner
+// un default para cuando el valor de la variable no sea una estación
+        System.out.println("4ª Parte ejercicio = switch");
+
+        var estacion="Primavera";
+        switch (estacion){
+            case "Otoño":
+                System.out.println("La estacion es Otoño");
+                break;
+            case "Invierno":
+                    System.out.println("La estacion es Invierno");
+                break;
+            case "Primavera":
+                    System.out.println("La estacion es Primavera");
+            break;
+
+            case "Verano":
+                    System.out.println("La estacion es Verano");
+                 break;
+            default:
+                    System.out.println("No es una estacion del año");
+
+        }
+
+
+
+
+
+    }
+}
