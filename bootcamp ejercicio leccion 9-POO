@@ -1,0 +1,79 @@
+public class Main {
+    public static void main(String[] args) {
+        Cliente cliente=new Cliente();
+        cliente.Nombre="Juan";
+        cliente.Edad=49;
+        cliente.Telefono=1142819335;
+        cliente.Credito=50000;
+
+        System.out.println("El nombre del cliente es "+cliente.getNombre()+", su edad es de "+cliente.getEdad()+" años");
+        System.out.println("Su telefono es "+cliente.getTelefono()+" y su credito es de "+cliente.getCredito()+" pesos.");
+
+        Trabajador trabajador=new Trabajador();
+        trabajador.Nombre="Jose";
+        trabajador.Edad=25;
+        trabajador.Telefono=1143125574;
+        trabajador.Salario=20000;
+
+        System.out.println("El nombre del Trabajador es "+trabajador.getNombre()+", su edad es de "+trabajador.getEdad()+" años");
+        System.out.println("Su telefono es "+trabajador.getTelefono()+" y su credito es de "+trabajador.getSalario()+" pesos.");
+    }
+}
+class Persona{
+    String Nombre;
+    int Edad;
+    int Telefono;
+
+    public String getNombre(){
+
+        return this.Nombre;
+    }
+    public void setNombre(String nombre){
+        this.Nombre = nombre;
+    }
+    public int getTelefono(){
+
+        return this.Telefono;
+    }
+    public void setTelefono(int telefono){
+        this.Telefono = telefono;
+    }
+    public int getEdad(){
+
+        return this.Edad;
+    }
+    public void setEdad(int edad){
+        this.Edad = edad;
+    }
+
+}
+class Cliente extends Persona{
+    int Credito;
+
+    public int getCredito(){
+
+        return this.Credito;
+    }
+    public void setCredito(int credito){
+        this.Credito = credito;
+    }
+
+
+
+
+}
+class Trabajador extends Persona{
+    int Salario;
+
+    public int getSalario(){
+
+        return this.Salario;
+    }
+    public void setSalario(int salario){
+        this.Salario = salario;
+    }
+
+
+
+
+}
